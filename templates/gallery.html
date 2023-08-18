@@ -1,0 +1,134 @@
+<!-- gallery.html -->
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+  }
+ 
+ 
+  .gallery {
+    width: 80%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  .gallery-item {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+  }
+  .gallery-item:hover img {
+    transform: scale(1.1);
+  }
+  .gallery-item-info {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    transition: bottom 0.3s ease-in-out;
+  }
+  .gallery-item:hover .gallery-item-info {
+    bottom: 0;
+  }
+</style>
+<div class="container">
+
+<div class="gallery">
+<div class="gallery-item">
+<img src="/static/IMG_5726p.jpg" alt="室内渲染">
+<div class="gallery-item-info">
+<span>室内渲染</span>
+<span>by CR渲染器</span>
+</div>
+</div>
+<div class="gallery-item">
+<img src="/static/IMG_6999.jpg" alt="室内渲染">
+<div class="gallery-item-info">
+<span>室内渲染</span>
+<span>by CR渲染器</span>
+</div>
+</div>
+<div class="gallery-item">
+<img src="/static/IMG_7001.jpg" alt="室内渲染">
+<div class="gallery-item-info">
+<span>室内渲染</span>
+<span>by CR渲染器</span>
+</div>
+</div>
+<div class="gallery-item">
+<img src="/static/IMG_7004(20230528-110234).jpg" alt="室内渲染">
+<div class="gallery-item-info">
+<span>室内渲染</span>
+<span>by CR渲染器</span>
+</div>
+</div>
+<div class="gallery-item">
+<img src="/static/IMG_6670(20230527-184038).jpg" alt="室内渲染">
+<div class="gallery-item-info">
+<span>室内渲染</span>
+<span>by CR渲染器</span>
+</div>
+</div>
+<div class="gallery-item">
+<img src="/static/IMG_6653.jpg" alt="室内渲染">
+<div class="gallery-item-info">
+<span>室内渲染</span>
+<span>by CR渲染器</span>
+</div>
+</div>
+<div class="gallery-item">
+<img src="/static/IMG_6838.jpg" alt="室内渲染">
+<div class="gallery-item-info">
+<span>室外渲染</span>
+<span>by CR渲染器</span>
+</div>
+</div>
+<div class="gallery-item">
+<img src="/static/OIG (4).jpg" alt="室内渲染">
+<div class="gallery-item-info">
+<span>室外渲染</span
+><span>by CR渲染器</span
+></div
+></div
+></div
+></div
+>
+
+
+<div class="images">
+{% for image in images %}
+<div class="image">
+<a href="{{ url_for('image', image_id=image.id) }}">
+<img src="{{ url_for('static', filename=image.filename) }}" alt="{{ image.title }}">
+<div class="image-title">{{ image.title }}</div>
+</a>
+</div>
+{% endfor %}
+</div>
+

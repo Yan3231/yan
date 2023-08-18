@@ -1,0 +1,233 @@
+<html>
+<head>
+  <style>
+    /* 设置背景图片为第一张壁纸 */
+     body {
+      background: url("https://th.bing.com/th/id/R.544910e4c4e546135313f4cfbc2c9cdf?rik=ZTc5fbnZ08BmFg&riu=http%3a%2f%2fhdqwalls.com%2fwallpapers%2flandscape-lake-mountains-4k-zg.jpg&ehk=y42VoJsDqDFV27KnYOynd48aDaoeIP1gP9DH6PISluQ%3d&risl=&pid=ImgRaw&r=0") no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    
+
+    
+
+    /* 设置毛玻璃效果框框 */
+    .glass {
+      width: 38.3%;
+      height: 39.3%;
+      margin: 10% auto;
+      background: inherit;
+      border-radius: 15px;
+      box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* 设置毛玻璃效果框框的模糊滤镜 */
+    .glass::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: inherit;
+      filter: blur(20px);
+    }
+
+    /* 设置毛玻璃效果框框的内容 */
+    .content {
+      position: relative;
+      padding: 2rem;
+      color: hsl(0,0%,96.45%);
+      font-family: Arial, sans-serif;
+    }
+
+    /* 设置标题样式 */
+    h1 {
+      font-size: 3rem;
+      text-align: center;
+    }
+
+    /* 设置段落样式 */
+    p {
+      font-size: 1.5rem;
+      line-height: 1.5;
+    }
+
+    /* 设置按钮样式 */
+    .button {
+      display: block;
+      width: 150px;
+      height: 50px;
+      margin: 2rem auto;
+      border-radius: 15px;
+      border: none;
+      background-color: hsl(0,0%,15%); /* 购买按钮为蓝色 */  
+      color: hsl(0,0%,96.45%);
+      font-size: 1.5rem;
+      cursor: pointer;
+      position: relative; / 按钮相对于父元素定位 / 
+      
+       
+    }
+    
+    /* 设置按钮悬停效果 */
+    .button:hover {
+      transform: scale(1.0015);
+    }
+    
+    /* 设置按钮点击效果 */
+    .button:focus {
+      outline: none;
+    }
+    
+    /* 设置按钮按下效果 */
+    .button:active {
+      transform: scale(0.99028934);
+    }
+
+     /* 设置多个毛玻璃效果框框的布局 */
+     .container {
+       display :flex; 
+       flex-wrap :wrap; 
+       justify-content :center; 
+       
+     }
+
+     /* 设置多个毛玻璃效果框框的样式 */
+     .glass-item {
+       width :30%;
+       height :30%;
+       margin :10auto; 
+       background :rgba(255, 255, 255, .05); 
+       border-radius :15px; 
+       box-shadow :0 0 1rem 1.5 rgba(0, 0, 0, .2); 
+       overflow :hidden; 
+       position :relative; 
+     }
+    
+     /* 设置多个毛玻璃效果框框的模糊滤镜 */
+     .glass-item::before {
+       content :"";
+       position :absolute; 
+       top :0; left :0; right :0; bottom :0; 
+       background :inherit; 
+       filter :blur(20px); 
+     }
+    
+     /* 设置多个毛玻璃效果框框的内容样式 */
+     .item-content {
+       position :relative; 
+       display :flex; 
+       flex-direction :column; 
+       align-items :center; 
+       justify-content :center; 
+     }
+    
+     /* 设置多个毛玻璃效果框框的标题样式 */
+     .item-title {
+       font-size :2rem; 
+       margin-bottom :1rem;
+       color: #333; 
+     }
+    
+     /* 设置多个毛玻璃效果框框的按钮样式 */
+     .item-button {
+       width :150px; 
+       height :40px; 
+       border-radius :15px; 
+       border :2px solid black; 
+       background-color : transparent; /* 购买按钮为蓝色 */  
+       color :hsl(233,100%,29.45%); 
+       font-size :1.2rem; 
+       cursor :pointer; 
+     }
+    
+     <!-- 设置多个毛玻璃效果框框的按钮悬停效果 -->
+     .item-button:hover {
+       transform :scale(1.1); 
+     }
+    
+     <!-- 设置多个毛玻璃效果框框的按钮点击效果 -->
+     .item-button:focus {
+       outline :none; 
+     }
+    
+     <!-- 设置多个毛玻璃效果框框的按钮按下效果 -->
+     .item-button:active {
+       transform :scale(0.9); 
+     }
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+
+</style>
+</head>
+<body>
+  
+   <!-- 添加知琴表现服务的毛玻璃效果框框 -->
+   <div class="glass">
+   <div class="content">
+   <h1>知琴渲染表现服务</h1>
+   <p>我们提供专业的渲染表现服务，让你的室内设计方案、室外表现得到更美观、多样、定制化的效果呈现。我们可以根据你的需求和喜好，为你打造独一无二的视觉体验。</p>
+   <button class="button">立即预约</button>
+   </div>  
+   </div>
+
+   <!-- 添加其他三个服务的毛玻璃效果框框 -->
+   <div class="container">
+   
+   <!-- 第一个服务 -->
+   <div class="glass-item">
+   <div class="item-content">
+   <h2 class="item-title">渲染表现服务</h2>
+   <button class="item-button">购买</button> <!-- 购买按钮为蓝色 -->
+   <button class="item-button" style="background-color:white;">了解详细信息</button> <!--了解详细信息按钮为纯白 -->
+   </div>
+   </div>
+   
+   <!-- 第二个服务 -->
+   <div class="glass-item">
+   <div class="item-content">
+   <h2 class="item-title">动画制作服务</h2>
+   <button class="item-button">购买</button> <!-- 购买按钮为蓝色 -->
+   <button class="item-button" style="background-color:white;">了解详细信息</button> <!--了解详细信息按钮为纯白 -->
+   </div>
+   </div>
+   
+ <!-- 第三个服务 -->
+<div class="glass-item">
+<div class="item-content">
+<h2 class="item-title">其他定制化服务</h2>
+<button class="item-button">购买</button> <!-- 购买按钮为蓝色 -->
+<button class="item-button" style="background-color:white;">了解详细信息</button> <!--了解详细信息按钮为纯白 -->
+</div>
+</div>
+
+<!-- 闭合container div -->
+</div>
+
+<!-- 闭合body div -->
+</body>
+
+<!-- 闭合html div -->
+</html>

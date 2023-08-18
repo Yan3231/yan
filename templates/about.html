@@ -1,0 +1,186 @@
+<!-- about.html -->
+
+
+<html>
+<head>
+<style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url("https://th.bing.com/th/id/R.404d17df7bffa88ca42c494b5642e18b?rik=0gL2IJ%2bBMFSQPQ&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f1%2ff%2f0%2f198347.jpg&ehk=8%2fDp9EA3npKxEQy%2bw8MmgEIT2mtiq7MUPuWjJI17m0o%3d&risl=&pid=ImgRaw&r=0");
+      background-size: cover;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 35px;
+      color: hsl#333;
+      text-shadow: 1px 1px 2px #888888;
+    }
+.container {
+      width: 100%;
+      height: 91.41%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .chat-box {
+      width: 100%;
+      height: 704px;
+      border-radius: 10px;
+      overflow-x: none;
+      overflow-y: none;
+      display: flex;
+      flex-direction: row-reverse;
+    }
+     /* 实现从右到左排版 */ 
+   .chat-box {
+     width: fit-content; 
+     float: right;  
+     margin-right: 10px;  
+     margin-left: auto;
+     
+}
+    
+    .chat-message {
+      width: fit-content;
+      height：fit-content；
+      
+      margin: 45px;
+      padding: 25px;
+      border-radius: 18.222px;
+      border: 3.5px solid black;
+      font-size :10px
+      margin-top: 400px;
+      margin-bottom: 10px;
+      
+      
+    }
+
+    .user-message {
+      align-self: flex-end;
+      background-color: transparent;
+      font-size :48.2px
+      padding: 248.2px;
+      
+      
+     
+      
+      
+    }
+   
+
+    .assistant-message {
+      align-self: flex-start;
+      background-color: transparent;
+      font-size :48.2px
+      padding: 248.2px;
+      height: 700px;
+    }
+    .sent-message::before {
+      content: "•";
+      color: #00cc00;
+      margin-right: 5px;
+      font-size :36px
+    }
+    .sent-message {
+      color: hsl(0,0%,96.45%);
+      
+    }
+
+    .done-message::before {
+      content: "•";
+      color: #00cc00;
+      margin-right: 5px;
+      font-size :36px
+      
+    }
+    .done-message {
+      color: hsl(0,0%,96.45%);
+      
+    }
+
+    
+
+
+
+  
+
+    .search-box {
+      width: 65%;
+      margin: 20px auto;
+      display:flex; 
+      
+      
+    }
+
+    .search-input {
+      
+        width :70%;
+        height :50px; 
+        border-radius :10px; 
+        border: 3.5px solid #333; 
+        padding :10px; 
+        font-size :18px;
+        background-color: transparent;
+        color:hsl(0,0%,96.45%); 
+        cursor:text; 
+       
+        }
+
+    .search-button {
+      width: 50px;
+      height: 50px;
+      border-radius: 999px;
+      
+      
+      
+      margin-left: 10px;
+      font-size: 18px;
+      color:yellow;
+      background-color: transparent;
+    }
+
+    .search-button:hover {
+      transform: scale(1.1);
+    }
+
+    .search-button:focus {
+      outline: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>第二规则奇境</h1>
+  <h1>开发中......</h1>
+  <div class="container">
+    <div id="user-chat" class="chat-box">
+  
+</div>
+
+ 
+</div>
+
+
+
+
+</div>
+      
+    </div>
+    
+  </div>
+  <div class="search-box">
+    <input type="text" id="search-input" class="search-input" placeholder="输入文字..." maxlength="400000">
+    <button id="search-button" class="search-button">➡</button>
+  </div>
+    
+</body>
+     
+</html>
+<script src="./static/js/chat.js"></script>
+
